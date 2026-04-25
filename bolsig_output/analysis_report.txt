@@ -1,0 +1,23 @@
+BOLSIG+ Ar 数据解析完成
+输入文件: E:\博士课程\激光加工\Ar_all.dat
+截面数据点数: 3999
+碰撞过程数: 42
+输运参数点数: 30
+速率系数过程数: 42
+能量损失系数过程数: 42
+
+COMSOL 平均场估算：
+  V0 = 200 V
+  L = 0.368 m
+  N = 3.295000e+22 1/m3
+  E/N = 16.494 Td
+
+最推荐传递给 COMSOL 的参数：
+  1) Mobility *N (1/m/V/s)，对应 COMSOL 中 mueN
+  2) Diffusion coefficient *N (1/m/s)，可换算 De = DeN/N
+  3) Townsend ioniz. coef. alpha/N (m2)，可换算 alpha = alphaN*N
+  4) Rate coefficients / Energy loss coefficients，可用于替换或校验反应源项与能量损失项
+
+COMSOL 平均场对应的传递参数：
+ target_EoverN_Td  Mean energy (eV)  Mobility *N (1/m/V/s)  Diffusion coefficient *N (1/m/s)  Energy mobility *N (1/m/V/s)  Energy diffusion coef. *N (1/m/s)  Townsend ioniz. coef. alpha/N (m2)  Total ionization freq. /N (m3/s)  Power /N (eV m3/s)  Elastic power loss /N (eV m3/s)  Inelastic power loss /N (eV m3/s)  mu_e_m2_V_s   D_e_m2_s  alpha_1_m  ionization_frequency_1_s
+        16.494029          5.528199           1.058379e+24                      7.709100e+24                  1.392454e+24                       5.772973e+24                        1.302778e-24                      2.706486e-20        2.690804e-16                     2.449029e-17                       2.786113e-16     32.12077 233.963578   0.042927                891.787282
